@@ -252,8 +252,9 @@ function initTypingEffect() {
     if (!typingElement) return;
     
     const phrases = [
-        'Machine Learning Engineer',
-        'Deep Learning Enthusiast',
+        'Devops Engineer',
+        'Cloud Engineer',
+        'Backend Engineer',
         'Problem Solver'
     ];
     
