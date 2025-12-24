@@ -394,114 +394,14 @@ function initProjectsData() {
     const projects = [
         {
             id: 1,
-            title: "Prices Predictor System",
-            description: "An end-to-end machine learning pipeline for price prediction using ZenML and MLflow. Features include data preprocessing, model training, evaluation, and deployment with automated tracking of experiments and model versions.",
-            image: "https://i.postimg.cc/gJpxfpx5/Price.jpg",
+            title: "Docker Compose Project",
+            description: "A containerized three-tier web application orchestrated with Docker Compose for seamless environment setup. The architecture integrates a React frontend, a Node.js/Express backend, and a MongoDB database, enabling a full-stack deployment with a single command. It features automated network isolation, environment variable management, and persistent data storage through Docker volumes.",
+            image: "https://media.geeksforgeeks.org/wp-content/uploads/20250906170259714869/docker_compose_environment.webp",
             category: "ml",
-            tags: ['Python', 'Machine Learning', 'ZenML', 'MLflow', 'Data Science', 'MLOps'],
+            tags: ['Docker', 'Nodejs', 'Expressjs','MongoDB','Vite'],
             //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
-            codeLink: "https://github.com/AdilShamim8/Prices_Predictor_System"
-        },
-        {
-            id: 2,
-            title: 'Toolly Studio',
-            description: 'A powerful Streamlit app for generating professional product ads using Bria AI\'s advanced image generation and manipulation APIs. Features intelligent prompt engineering, batch processing capabilities, and seamless integration with modern AI image generation tools.',
-            image: 'https://i.postimg.cc/mZ9YhHvq/20251013-1714-Ghibli-Inspired-Product-Ad-simple-compose-01k7emcvyce5zaj4jkz40q9fsz.png',
-            category: 'ai',
-            tags: ['Python', 'Streamlit', 'Bria AI', 'Image Generation', 'AI', 'Marketing Automation'],
-            demoLink: null,
-            codeLink: 'https://github.com/AdilShamim8/Toolly-Studio'
-        },
-        {
-            id: 3,
-            title: 'Book Recommender System',
-            description: 'An intelligent book recommendation system that combines collaborative filtering and content-based approaches. Features include personalized recommendations, user preference analysis, and a user-friendly web interface for seamless book discovery.',
-            image: 'https://i.postimg.cc/MGyXDb27/Book.jpg',
-            category: 'ml',
-            tags: ['Python', 'Machine Learning', 'Recommender Systems', 'Web Development', 'Flask', 'Data Science'],
-            demoLink: 'https://adil-book-recommender.onrender.com/',
-            codeLink: 'https://github.com/AdilShamim8/Book-Recommender-System'
-        },
-        // {
-        //     id: 2,
-        //     title: '100 AI Machine Learning & Deep Learning Projects',
-        //     description: 'A comprehensive collection of 100 hands-on projects covering the entire spectrum of AI, from fundamental machine learning algorithms to advanced deep learning architectures. Each project includes detailed implementations, best practices, and real-world applications across various domains.',
-        //     image: 'https://i.postimg.cc/dtNL5V70/AI.jpg',
-        //     category: 'ml',
-        //     tags: ['Python', 'Machine Learning', 'Deep Learning', 'AI', 'Data Science', 'Computer Vision', 'NLP'],
-        //     //demoLink: 'https://github.com/AdilShamim8/100-AI-Machine-Learning-Deep-Learning-Projects',
-        //     codeLink: 'https://github.com/AdilShamim8/100-AI-Machine-Learning-Deep-Learnin-Projects'
-        // },
-        {
-            id: 4,
-            title: 'Resume Screening',
-            description: 'AI-powered tool for efficient and fair candidate selection. Utilizes advanced NLP techniques to parse, analyze, and rank resumes based on job requirements. Features include automated skill extraction, experience matching, and bias-free candidate evaluation.',
-            image: 'https://i.postimg.cc/tTxx1KMP/20251013-1717-AI-Powered-Resume-Screening-simple-compose-01k7emhkcqffrrt7hwx30df76e.png',
-            category: 'ai',
-            tags: ['Python', 'NLP', 'Machine Learning', 'HR Tech', 'Text Analysis', 'Automation'],
-            demoLink: null,
-            codeLink: 'https://github.com/AdilShamim8/Resume-Screening'
-        },
-        {
-            id: 5,
-            title: 'Sentiment Analysis',
-            description: 'A powerful NLP application that performs sentiment analysis on text input, classifying it as positive, neutral, or negative. Built with Python and Streamlit, featuring a clean user interface and real-time analysis capabilities.',
-            image: 'https://i.postimg.cc/jj9d6bbm/NLP.jpg',
-            category: 'ml',
-            tags: ['Python', 'NLP', 'Streamlit', 'Machine Learning', 'Text Classification', 'Web App'],
-            //demoLink: 'https://github.com/AdilShamim8/Sentiment-analysis',
-            codeLink: 'https://github.com/AdilShamim8/Sentiment-analysis'
-        },
-        // {
-        //     id: 5,
-        //     title: 'Cat vs Dog Image Classification',
-        //     description: 'A deep learning project implementing Convolutional Neural Networks (CNN) for binary image classification. Features include data augmentation, model training with transfer learning, and real-time prediction capabilities.',
-        //     image: 'https://i.postimg.cc/B6TZvvvx/Screenshot-2025-06-13-212543.png',
-        //     category: 'ml',
-        //     tags: ['Python', 'Deep Learning', 'CNN', 'Computer Vision', 'TensorFlow', 'Image Classification'],
-        //     //demoLink: 'https://github.com/AdilShamim8/Cat_Vs_Dog_Image_Classification_Project',
-        //     codeLink: 'https://github.com/AdilShamim8/Cat_Vs_Dog_Image_Classification_Project'
-        // },
-        // {
-        //     id: 6,
-        //     title: 'Stock Price Prediction',
-        //     description: 'A sophisticated time series forecasting project using LSTM neural networks to predict stock prices. Features include data preprocessing, feature engineering, model training with TensorFlow/Keras, and performance evaluation metrics.',
-        //     image: 'https://i.postimg.cc/B6hRFk6X/Stock.jpg',
-        //     category: 'ml',
-        //     tags: ['Python', 'Deep Learning', 'LSTM', 'Time Series', 'TensorFlow', 'Financial Analysis'],
-        //     //demoLink: 'https://github.com/AdilShamim8/Stock_Price_Prediction',
-        //     codeLink: 'https://github.com/AdilShamim8/Stock_Price_Prediction'
-        // },
-        // {
-        //     id: 10,
-        //     title: 'Olympic History Analysis',
-        //     description: 'A comprehensive data analysis project exploring 120 years of Olympic history. Features interactive visualizations, statistical analysis of athlete performance trends, and insights into the evolution of sports across different countries and time periods.',
-        //     image: 'https://i.postimg.cc/G3MwZ8bv/OLYMPC.jpg',
-        //     category: 'data',
-        //     tags: ['Python', 'Data Analysis', 'Data Visualization', 'Pandas', 'Matplotlib', 'Sports Analytics'],
-        //     demoLink: null,
-        //     codeLink: 'https://github.com/AdilShamim8/Olympic_History_Analysis'
-        // },
-        // {
-        //     id: 9,
-        //     title: 'ML Roadmap and Notes',
-        //     description: 'A comprehensive learning path and detailed notes covering the entire machine learning landscape. Features include structured learning modules, practical examples, implementation guides, and best practices for both beginners and advanced practitioners in the field of AI and ML.',
-        //     image: 'https://i.postimg.cc/FKRp2Rpn/Roadmap.jpg',
-        //     category: 'ml',
-        //     tags: ['Machine Learning', 'Deep Learning', 'AI', 'Data Science', 'Learning Resources', 'Best Practices'],
-        //     //demoLink: 'https://github.com/AdilShamim8/ML-Roadmap-and-Notes',
-        //     codeLink: 'https://github.com/AdilShamim8/ML-Roadmap-and-Notes'
-        // },
-        {
-            id: 6,
-            title: 'Toolly',
-            description: 'An AI-powered productivity suite that automates and streamlines your daily tasks. Features include intelligent text processing, automated content generation, and smart task management, all designed to boost your efficiency and save valuable time.',
-            image: 'https://i.postimg.cc/4d0vfpLB/20250613-1939-Toolly-Modern-Tech-Logo-simple-compose-01jxmr7v1neyav79wdd6fye13h.png',
-            category: 'ai',
-            tags: ['Python', 'AI', 'NLP', 'Web Development', 'Productivity Tools', 'Automation'],
-            demoLink: 'https://www.toolly.tech/',
-            codeLink: 'https://github.com/AdilShamim8/Toolly'
-        },
+            codeLink: "https://github.com/kilbha/three-tier-app"
+        },        
     ];
     
     // Create project items
