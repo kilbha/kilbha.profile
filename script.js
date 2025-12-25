@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initBackToTop();
     initProjectsFilter();
     initProjectsDockerData();
-    initProjectsTerraformData();
+    // initProjectsTerraformData();
     initContactForm();
     initHaptics();
     setCurrentYear();
@@ -402,7 +402,17 @@ function initProjectsDockerData() {
             tags: ['Docker', 'Nodejs', 'Expressjs','MongoDB','Vite'],
             //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
             codeLink: "https://github.com/kilbha/three-tier-app"
-        },        
+        },   
+        {
+            id: 2,
+            title: "Terraform ALB Project",
+            description: "An automated Infrastructure-as-Code (IaC) project that provisions a complete AWS networking environment using Terraform. It deploys a VPC, public subnets, and EC2 instances running Apache2 behind an Application Load Balancer. The entire stack—including security groups, an S3 bucket, and routing—is fully automated, allowing for an end-to-end deployment via a single command.",
+            image: "image/terraform/terraform-ss1.png",
+            category: "ml",
+            tags: ['Terraform', 'AWS', 'EC2','Load Balancer','VPC'],
+            //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
+            codeLink: "https://github.com/kilbha/terraform-alb-project.git"
+        },
     ];
     
     // Create project items

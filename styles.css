@@ -1011,9 +1011,11 @@ button {
 
 .project-img-docker {
     width: 100%;
-    
+    height: 270px;
     object-fit: cover;
     background: var(--gradient-mesh);    
+    /* object-position:center; */
+    /* padding:10px; */
 }
 
 .project-img-terraform {
