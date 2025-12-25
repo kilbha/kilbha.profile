@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimation();
     initBackToTop();
     initProjectsFilter();
-    initProjectsData();
+    initProjectsDockerData();
+    initProjectsTerraformData();
     initContactForm();
     initHaptics();
     setCurrentYear();
@@ -386,8 +387,8 @@ function initProjectsFilter() {
 }
 
 // Dynamically populate projects
-function initProjectsData() {
-    const projectsGrid = document.querySelector('.projects-grid');
+function initProjectsDockerData() {
+    const projectsGrid = document.querySelector('#docker-projects');
     if (!projectsGrid) return;
     
     // Sample project data
@@ -412,7 +413,57 @@ function initProjectsData() {
         projectItem.setAttribute('data-aos-delay', (project.id * 100).toString());
         
         projectItem.innerHTML = `
-            <img src="${project.image}" alt="${project.title}" class="project-img" loading="lazy" decoding="async">
+            <img src="${project.image}" alt="${project.title}" class="project-img-docker" loading="lazy" decoding="async">
+            <div class="project-content">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <div class="project-tags">
+                    ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                </div>
+                <div class="project-links">
+                    ${project.demoLink && project.demoLink !== '' ? `
+                        <a href="${project.demoLink}" class="project-link" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    ` : ''}
+                    <a href="${project.codeLink}" class="project-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+        `;
+        
+        projectsGrid.appendChild(projectItem);
+    });
+}
+
+function initProjectsTerraformData() {
+    const projectsGrid = document.querySelector('#terraform-projects');
+    if (!projectsGrid) return;
+    
+    // Sample project data
+    const projects = [
+        {
+            id: 1,
+            title: "Terraform ALB Project",
+            description: "An automated Infrastructure-as-Code (IaC) project that provisions a complete AWS networking environment using Terraform. It deploys a VPC, public subnets, and EC2 instances running Apache2 behind an Application Load Balancer. The entire stack—including security groups, an S3 bucket, and routing—is fully automated, allowing for an end-to-end deployment via a single command.",
+            image: "image/terraform/terraform-alb.png",
+            category: "ml",
+            tags: ['Terraform', 'AWS', 'EC2','Load Balancer','VPC'],
+            //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
+            codeLink: "https://github.com/kilbha/terraform-alb-project.git"
+        },        
+    ];
+    
+    // Create project items
+    projects.forEach(project => {
+        const projectItem = document.createElement('div');
+        projectItem.className = `project-item ${project.category}`;
+        projectItem.setAttribute('data-aos', 'fade-up');
+        projectItem.setAttribute('data-aos-delay', (project.id * 100).toString());
+        
+        projectItem.innerHTML = `
+            <img src="${project.image}" alt="${project.title}" class="project-img-terraform" loading="lazy" decoding="async">
             <div class="project-content">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>

@@ -980,9 +980,16 @@ button {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: var(--spacing-24);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 }
+
+.project-item {
+    max-width: 420px;
+    width: 100%;
+}
+
 
 .project-item {
     background-color: var(--background-elevated);
@@ -1002,13 +1009,19 @@ button {
     border-color: rgba(0, 122, 255, 0.3);
 }
 
-.project-img {
+.project-img-docker {
     width: 100%;
-    height: 200px;
+    
     object-fit: cover;
-    background: var(--gradient-mesh);
+    background: var(--gradient-mesh);    
 }
 
+.project-img-terraform {
+    width: 100%;
+    
+    object-fit: cover;
+    background: var(--gradient-mesh);    
+}
 .project-content {
     padding: var(--spacing-20);
     flex: 1;
