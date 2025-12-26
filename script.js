@@ -413,6 +413,16 @@ function initProjectsDockerData() {
             //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
             codeLink: "https://github.com/kilbha/terraform-alb-project.git"
         },
+        {
+            id: 3,
+            title: "Terraform VPC EKS Project",
+            description: "An automated Infrastructure-as-Code (IaC) project that provisions a production-grade EKS environment on AWS using Terraform. It deploys a multi-AZ VPC with public and private subnets, a NAT Gateway, and a highly available EKS cluster with managed node groups. The entire stack—including IAM roles, OIDC authentication, and remote state management via S3—is fully automated to ensure a secure, scalable, and resilient Kubernetes foundation.",
+            image: "image/terraform/terraform-eks-vpc.png",
+            category: "ml",
+            tags: ['Terraform', 'AWS', 'EKS','Load Balancer','VPC','Kubernetes', 'EC2','IAM'],
+            //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
+            codeLink: "https://github.com/kilbha/terraform-vpc-eks.git"
+        },
     ];
     
     // Create project items

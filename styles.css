@@ -1015,7 +1015,7 @@ button {
     object-fit: cover;
     background: var(--gradient-mesh);    
     /* object-position:center; */
-    /* padding:10px; */
+    /* padding:5px; */
 }
 
 .project-img-terraform {
