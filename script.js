@@ -423,6 +423,16 @@ function initProjectsDockerData() {
             //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
             codeLink: "https://github.com/kilbha/terraform-vpc-eks.git"
         },
+        {
+            id: 4,
+            title: "CI CD Project - Jenkins",
+            description: "Implemented a robust GitOps-driven CI/CD pipeline for a containerized application on AWS EKS. The workflow uses Jenkins to automate unit testing, SonarQube for static analysis, and Docker for containerization, with Trivy ensuring image security before pushing to Docker Hub. ArgoCD monitors the repository to provide automated, declarative deployments to the EKS cluster, while integrated Slack notifications provide real-time status updates throughout the lifecycle.",
+            image: "image/jenkins/jenkins-ci-cd.gif",
+            category: "ml",
+            tags: ['Jenkins','Maven','Java', 'AWS', 'EKS','Kubernetes','SonarQube', 'EC2', "Trivy", "Docker","Slack"],
+            //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
+            codeLink: "https://github.com/kilbha/Jenkins-Zero-To-Hero"
+        },
     ];
     
     // Create project items
