@@ -433,6 +433,16 @@ function initProjectsDockerData() {
             //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
             codeLink: "https://github.com/kilbha/Jenkins-Zero-To-Hero"
         },
+        {
+            id: 5,
+            title: "CI CD Project - GitHub Actions",
+            description: "Developed a streamlined GitOps CI/CD pipeline for a Tic-Tac-Toe application using GitHub Actions and ArgoCD on AWS EKS. The automated workflow triggers on commit, performing unit testing and static code analysis before building and pushing Docker images to Amazon ECR. Upon updating the YAML manifests, ArgoCD detects the changes and performs an automated, declarative deployment to the EKS cluster. This ensures a seamless transition from code update to live production environment.",
+            image: "image/github-actions/ga-ci-cd.gif",
+            category: "ml",
+            tags: ['GitHub Actions','AWS', 'EKS','Kubernetes','SonarQube', 'EC2', "Trivy", "Docker"],
+            //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
+            codeLink: "https://github.com/kilbha/ci-cd-tic-tac-toe.git"
+        },
     ];
     
     // Create project items
