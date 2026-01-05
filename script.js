@@ -393,6 +393,16 @@ function initProjectsDockerData() {
     
     // Sample project data
     const projects = [
+        // {
+        //     id: 0,
+        //     title: "Ultimate CI-CD Project",
+        //     description: "A containerized three-tier web application orchestrated with Docker Compose for seamless environment setup. The architecture integrates a React frontend, a Node.js/Express backend, and a MongoDB database, enabling a full-stack deployment with a single command. It features automated network isolation, environment variable management, and persistent data storage through Docker volumes.",
+        //     image: "https://media.geeksforgeeks.org/wp-content/uploads/20250906170259714869/docker_compose_environment.webp",
+        //     category: "ml",
+        //     tags: ['Docker', 'Nodejs', 'Expressjs','MongoDB','Vite'],
+        //     //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
+        //     codeLink: "https://github.com/kilbha/three-tier-app"
+        // },
         {
             id: 1,
             title: "Docker Compose Project",
