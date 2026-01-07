@@ -397,7 +397,7 @@ function initProjectsDockerData() {
             id: 0,
             title: "Ultimate CI-CD Project",
             description: "An automated, enterprise-grade CI/CD pipeline and Infrastructure as Code (IaC) framework for a scalable three-tier application. Leveraging Terraform for AWS provisioning and EKS for orchestration, the system integrates Jenkins for continuous integration and ArgoCD for GitOps-driven deployment. The architecture features high availability via Kubernetes Horizontal Pod Autoscaling (HPA), Helm-based package management, and Docker Compose for local development, ensuring a seamless, fully automated lifecycle from code commit to production",
-            image: "image/ultimate/ultimate-ci-cd.gif",
+            image: "image/ultimate/ultimate_jenkins_argocd2.gif",
             category: "ml",
             tags: ['Terraform', 'AWS', 'EKS', 'Docker', 'ArgoCD', 'Jenkins','GitHub Actions','Load Balancer','Hosted Zones', 'Kubernetes','HPA','Helm'],
             //demoLink: "https://github.com/AdilShamim8/Prices_Predictor_System",
